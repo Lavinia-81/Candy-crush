@@ -8,7 +8,7 @@ let score = 0
 const candyColors = [
   'red',
   'yellow',
-  'sky',
+  'magenta',
   'aqua',
   'green',
   'blue',
