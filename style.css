@@ -1,49 +1,47 @@
 body {
-  background-image: url(https://lh3.googleusercontent.com/qZ7LgXdH6mMyh4vPXqzrLuBzkhI2HXcB35apmRxVCbT-A6EUabEJD3E4Omz4WNvzwE0_=h900); 
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
- 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(https://lh3.googleusercontent.com/qZ7LgXdH6mMyh4vPXqzrLuBzkhI2HXcB35apmRxVCbT-A6EUabEJD3E4Omz4WNvzwE0_=h900); 
+  font-family: Arial, sans-serif;
+}
+
+.score-board {
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .grid {
-  height: 560px;
-  width: 560px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 80px;
-  margin-top: 10px;
-  padding: 5px;
-  background-color: rgb(124, 124, 148);
-  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: repeat(8, 50px);
+  gap: 2px;
+  background-color: rgb(147, 121, 89);
   box-shadow: 5px 5px 10px 5px  rgba(0,0,0,0.5),
   inset 5px 5px 20px rgba(255, 255,255, 0.2),
   inset -5px -5px 15px rgba(0, 0, 0, 0.75);
-  
 }
 
 .grid div {
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 5px;
   box-shadow: 5px 5px 10px 5px  rgba(0,0,0,0.5),
   inset 5px 5px 20px rgba(255, 255,255, 0.2),
   inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.score-bord {
-  background-color: rgb(244, 54, 117);
-  min-width: 200px;
-  border-radius: 10px;
-  margin-top: 330px;
-  margin-left: 150px;
-  margin-bottom: 140px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  box-shadow: 5px 5px 10px 5px  rgba(0,0,0,0.5),
-  inset 5px 5px 20px rgba(255, 255,255, 0.2),
-  inset -5px -5px 15px rgba(0, 0, 0, 0.75);
-}
+.grid div.red { background-color: red; }
+.grid div.yellow { background-color: yellow; }
+.grid div.magenta { background-color: magenta; }
+.grid div.aqua { background-color: aqua; }
+.grid div.green { background-color: green; }
+.grid div.blue { background-color: blue; }
+.grid div.maroon { background-color: maroon; }
