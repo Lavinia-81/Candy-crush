@@ -1,33 +1,123 @@
 # Candy Crush
-https://lavinia-81.github.io/Candy-crush/
+Classic Match‑Three Puzzle Game — HTML • CSS • JavaScript  
+Live Demo: https://lavinia-81.github.io/Candy-crush/
 
-Welcome to the **Candy-Crush** game repository! This project contains the code for a classic match-three puzzle game, implemented using HTML, CSS, and JavaScript.
+A simple, interactive Candy Crush–style game built using vanilla HTML, CSS, and JavaScript.
+This project was created early in my learning journey to explore DOM manipulation, event handling, game loops, and dynamic UI updates.
+
+---
+
+## Overview
+Candy Crush is a match‑three puzzle game where players drag and swap candies to form horizontal or vertical matches.
+Matched candies disappear, new candies fall into place, and the score increases dynamically.
+
+This project demonstrates:
+- grid‑based game logic
+- drag‑and‑drop events
+- DOM updates in real time
+- scoring mechanics
+- responsive layout
+- clean separation between structure, style, and logic
+
+---
 
 ## Features
+### Core Gameplay
+- Drag and drop candies
+- Match three or more identical candies
+- Clear matched candies automatically
+- Cascading effect: new candies fall into place
+- Score increases based on match size
 
-- **HTML**: Provides the structure of the game board and elements.
-- **CSS**: Handles the styling and layout of the game.
-- **JavaScript**: Adds the game logic and interactivity.
+---
+
+### UI & Design
+- Responsive grid layout
+- CSS‑based styling
+- Smooth transitions and visual feedback
+
+### JavaScript Logic
+- Board initialization
+- Candy swapping
+- Match detection
+- Candy clearing
+- Gravity effect (candies falling)
+- Score tracking
+- Game loop updates
+
+---
+
+## Project Structure
+```
+Candy-crush/
+│
+├── index.html        # Game board structure
+├── style.css         # Visual design and layout
+├── app.js            # Game logic and interactivity
+│
+└── README.md         # Documentation
+```
+A clean, minimal structure focused on clarity and learning.
+
+---
 
 ## How to Play
+- Open index.html in your browser.
+- The candy grid will appear.
+- Drag one candy onto another to swap them.
+- If the swap creates a match of 3+ candies:
+- - They disappear
+  - New candies fall into place
+  - Your score increases
+- Continue matching candies to increase your score.
+- The game ends when no more valid moves remain.
 
-1. Open the `index.html` file in your browser.
-2. The game board will be displayed with a grid of candies.
-3. Drag and drop candies to match three or more of the same color in a row or column.
-4. Matched candies will be cleared, and new candies will fall into place.
-5. Your score will increase based on the number of candies matched.
-6. The game continues until no more matches are possible.
+---
 
-## Key Concepts
+## Key Concepts Demonstrated
+- DOM Manipulation: Creating and updating the game board dynamically
+- Event Handling: Drag‑and‑drop interactions
+- Game Loop: Continuous checking for matches
+- Responsive Design: Works on desktop and mobile
+- Algorithmic Thinking: Match detection and cascading logic
 
-- **Game Logic**: Implemented in JavaScript to handle candy matching, scoring, and updating the game state.
-- **Responsive Design**: Ensures the game looks great on all devices.
-- **Event Handling**: Uses JavaScript to add events to elements for a dynamic user experience.
+---
 
 ## Getting Started
-
-To get started with this project, clone the repository and open the `index.html` file in your browser. Explore the code in the `html`, `css`, and `js` directories to understand how each part contributes to the overall functionality.
-
-```bash
+Clone the repository:
+```
 git clone https://github.com/Lavinia-81/Candy-crush.git
 cd Candy-crush
+Open the game:
+
+open index.html
+Or simply double‑click the file in your file explorer.
+```
+
+---
+
+## Future Enhancements
+- Add animations for candy clearing
+- Add sound effects
+- Add levels and difficulty progression
+- Add a timer or move counter
+- Add a leaderboard
+- Add special candies (bombs, striped candies, etc.)
+
+---
+
+## Purpose of This Project
+This mini‑game represents one of my earliest JavaScript projects.
+It helped me understand:
+- how game logic works
+- how to manipulate the DOM
+- how to build interactive UI components
+- how to structure small front‑end projects
+
+It remains in my portfolio as a milestone in my progression from beginner to advanced front‑end and full‑stack development.
+
+---
+
+## Contributions
+Contributions are welcome.
+Feel free to fork the repository and submit a pull request.
